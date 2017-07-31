@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on ManyCode</title>
+    <link>https://ManyCode.github.io/categories/</link>
+    <description>Recent content in Categories on ManyCode</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>amitcute3@gmail.com (Amit Kumar)</managingEditor>
+    <webMaster>amitcute3@gmail.com (Amit Kumar)</webMaster>
+    
+	<atom:link href="https://ManyCode.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
