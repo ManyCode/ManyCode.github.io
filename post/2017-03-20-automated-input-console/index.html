@@ -5,9 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Categories</title>
-  <meta property="og:title" content="Categories" />
-  <meta name="twitter:title" content="Categories" />
+  <title>AIC (Automated Input Console)</title>
+  <meta property="og:title" content="AIC (Automated Input Console)" />
+  <meta name="twitter:title" content="AIC (Automated Input Console)" />
+  <meta name="description" content="Send automated input to an executable program">
+  <meta property="og:description" content="Send automated input to an executable program">
+  <meta name="twitter:description" content="Send automated input to an executable program">
   <meta name="author" content="Amit Kumar"/>
   <link href='/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="/img/avatar-icon.png" />
@@ -15,12 +18,12 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@amit08255" />
   <meta name="twitter:creator" content="@amit08255" />
-  <meta property="og:url" content="/categories/" />
+  <meta property="og:url" content="/post/2017-03-20-automated-input-console/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="ManyCode" />
 
   <meta name="generator" content="Hugo 0.25.1" />
-  <link rel="canonical" href="/categories/" />
+  <link rel="canonical" href="/post/2017-03-20-automated-input-console/" />
   <link rel="alternate" href="/index.xml" type="application/rss+xml" title="ManyCode">
   <link rel="stylesheet" href="/css/katex.min.css" />
   <link rel="stylesheet" href="/css/font-awesome.min.css" />
@@ -182,9 +185,20 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="page-heading">
-              <h1>Categories</h1>
+            <div class="post-heading">
+              <h1>AIC (Automated Input Console)</h1>
                 
+                  
+                    <h2 class="post-subheading">Send automated input to an executable program</h2>
+                  
+                
+                
+                  <span class="post-meta">
+  Posted on July 31, 2017
+  
+</span>
+
+
                 
             </div>
           </div>
@@ -195,14 +209,145 @@
 
 
     
-  
-  <div class="container" role="main">
-    <article class="post-preview">
-      <div class="list-group col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>If you are a programmer, you must have been in situation when you had to enter same input in same program again and again. The <strong><code>AIC</code></strong> is a simple program which allows you to send automated input to an executable program.
+Lets see how?</p>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/img/aic-thumb.PNG" alt="Automated Input Console Screenshot"/>
+    </div>
+    <a href="/img/aic.PNG" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+<p></p>
+
+<p>AIC is very easy to work with. You just have to specify a filename which contains all input data to be sent in a program and an executable program filename and you are done.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+<li>Windows XP (or above)</li>
+<li>Python 2.7/+</li>
+<li>Python PyWin32 module</li>
+</ul>
+
+<h2 id="installing">Installing</h2>
+
+<ul>
+<li>To execute this program you must have <strong><code>Python</code></strong> and <strong><code>PyWin32</code></strong> module installed in your computer.</li>
+</ul>
+
+<h2 id="usage">Usage</h2>
+
+<ul>
+<li><p>Once you have installed everything, you just need to execute the <strong><code>.py</code></strong> (Python) script with python. To execute the script run <strong><code>python aic.py</code></strong> in windows command prompt.</p></li>
+
+<li><p>If executed successfully, you will be prompted with a welcome screen and a menu. First and second options are required to execute the program and automate input transfer. Once input data file and executable program filenames are specified, you can execute that program any number of times.</p></li>
+</ul>
+
+
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/img/aic2-thumb.PNG" alt="Automated Input Console Screenshot"/>
+    </div>
+    <a href="/img/aic2.PNG" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+<ul>
+<li>Above screenshot displays the name of files loaded successfully and we are ready for executing the program.</li>
+</ul>
+
+<h2 id="example">Example</h2>
+
+<p>Below is a simple example of data file which is used to input two numbers in a program:</p>
+
+<pre><code>23
+45
+</code></pre>
+
+<h2 id="example-2">Example-2</h2>
+
+<p>Below is a simple example of data file which is used to input a string and two numbers in a program:</p>
+
+<pre><code>Amit Kumar
+23
+10
+</code></pre>
+
+<h2 id="how-this-program-works">How this program works?</h2>
+
+<p>This is a simple python script which reads a file containing input data and automatically sends that data into a program when that program is executed using <strong><code>AIC</code></strong>.</p>
+
+<p>It uses <strong><code>SendKey</code></strong> method from Windows API which allows you to emulate keyboard input in a program.</p>
+
+<p><strong>This code snippet is used to load input data file and executable program:</strong></p>
+
+<pre><code>if int(choice)==1:
+    fname=raw_input(&quot;\nEnter file name: &quot;)
+    try:
+        fin=open(fname,&quot;r&quot;)
+        data=fin.read()
+        fin.close()
+    except:
+        print &quot;\n\nFailed to open file&quot;
+        msvcrt.getch()
+        fname=None
+
+if int(choice)==2:
+    name=raw_input(&quot;\nEnter program name: &quot;)
+    try:
+        open(name,&quot;rb&quot;).close()
+    except:
+        print &quot;\n\nFailed to Load Program&quot;
+        msvcrt.getch()
+        name=None
+</code></pre>
+
+<p><strong>This code snippet is used to send automated input in an executable program</strong></p>
+
+<pre><code>if int(choice)==3:
+    shell = win32com.client.Dispatch(&quot;WScript.Shell&quot;)
+    shell.Run(name)
+    win32api.Sleep(100)
+    while(name not in win32gui.GetWindowText (win32gui.GetForegroundWindow())):
+        shell.AppActivate(name)
+        win32api.Sleep(100)
+    for x in data:
+        if(x!=&quot;\n&quot;):
+            shell.SendKeys(x)
+        else:
+            shell.SendKeys(&quot;{ENTER}&quot;)
+        win32api.Sleep(10)
+</code></pre>
+
+<h2 id="but-how-can-i-get-this-program">But how can I get this program?</h2>
+
+<p>AIC can be downloaded from <a href="https://github.com/ManyCode/Automated-Input-Console/">Automated-Input-Console GitHub</a> page.</p>
+      </article>
+
+      <ul class="pager blog-pager">
+        
+        
+      </ul>
+
       
-      </div>
-    </article>
+        
+      
+
+    </div>
   </div>
+</div>
 
     <footer>
   <div class="container">

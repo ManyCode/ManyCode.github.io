@@ -2,24 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on ManyCode</title>
-    <link>https://ManyCode.github.io/page/</link>
+    <link>/page/</link>
     <description>Recent content in Pages on ManyCode</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>amitcute3@gmail.com (Amit Kumar)</managingEditor>
     <webMaster>amitcute3@gmail.com (Amit Kumar)</webMaster>
     
-	<atom:link href="https://ManyCode.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/page/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About me</title>
-      <link>https://ManyCode.github.io/page/about/</link>
+      <link>/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>amitcute3@gmail.com (Amit Kumar)</author>
-      <guid>https://ManyCode.github.io/page/about/</guid>
-      <description>My name is Inigo Montoya. I have the following qualities:
- I rock a great mustache I&amp;rsquo;m extremely loyal to my family  What else do you need?
-my history To be honest, I&amp;rsquo;m having some trouble remembering right now, so why don&amp;rsquo;t you just watch my movie and it will answer all your questions.</description>
+      <guid>/page/about/</guid>
+      <description>My name is Amit Kumar.
+ I&amp;rsquo;m a full time student I&amp;rsquo;m a programmer I&amp;rsquo;m a web designer and a blogger I&amp;rsquo;m tech savvy I&amp;rsquo;m extremely loyal to my family  My history Back in 2013 I adopted an interesting hobby apart from programming i.e. blogging. Started my first blog in late 2013 which was hosted on Blogspot dedicated to helping other with tips, tricks and simple computer programs.</description>
     </item>
     
   </channel>

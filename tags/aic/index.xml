@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ManyCode</title>
-    <link>/</link>
-    <description>Recent content on ManyCode</description>
+    <title>Aic on ManyCode</title>
+    <link>/tags/aic/</link>
+    <description>Recent content in Aic on ManyCode</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>amitcute3@gmail.com (Amit Kumar)</managingEditor>
     <webMaster>amitcute3@gmail.com (Amit Kumar)</webMaster>
     <lastBuildDate>Mon, 31 Jul 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/aic/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -33,16 +33,6 @@ Lets see how?&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>About me</title>
-      <link>/page/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>amitcute3@gmail.com (Amit Kumar)</author>
-      <guid>/page/about/</guid>
-      <description>My name is Amit Kumar.
- I&amp;rsquo;m a full time student I&amp;rsquo;m a programmer I&amp;rsquo;m a web designer and a blogger I&amp;rsquo;m tech savvy I&amp;rsquo;m extremely loyal to my family  My history Back in 2013 I adopted an interesting hobby apart from programming i.e. blogging. Started my first blog in late 2013 which was hosted on Blogspot dedicated to helping other with tips, tricks and simple computer programs.</description>
     </item>
     
   </channel>
