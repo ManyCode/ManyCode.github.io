@@ -8,11 +8,6 @@
   </url>
   
   <url>
-    <loc>https://ManyCode.github.io/</loc>
-    <lastmod>2017-07-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ManyCode.github.io/page/about/</loc>
   </url>
   
@@ -25,6 +20,11 @@
   <url>
     <loc>https://ManyCode.github.io/categories/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ManyCode.github.io/</loc>
+    <lastmod>2017-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
